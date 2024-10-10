@@ -1,0 +1,28 @@
+<Sysmon schemaversion="4.81">
+  <EventFiltering>
+    <RuleGroup name="" groupRelation="or">
+      <ProcessCreate onmatch="include">
+        <Image condition="begin with">C:\Users\mranv\Desktop\Hello-World\</Image>
+      </ProcessCreate>
+    </RuleGroup>
+    
+    <!-- Exclude all other event types -->
+    <FileCreate onmatch="exclude"/>
+    <FileCreateTime onmatch="exclude"/>
+    <FileCreateStreamHash onmatch="exclude"/>
+    <RegistryEvent onmatch="exclude"/>
+    <NetworkConnect onmatch="exclude"/>
+    <DriverLoad onmatch="exclude"/>
+    <ImageLoad onmatch="exclude"/>
+    <CreateRemoteThread onmatch="exclude"/>
+    <RawAccessRead onmatch="exclude"/>
+    <ProcessAccess onmatch="exclude"/>
+    <PipeEvent onmatch="exclude"/>
+    <WmiEvent onmatch="exclude"/>
+    <DnsQuery onmatch="exclude"/>
+    <FileDelete onmatch="exclude"/>
+    <ClipboardChange onmatch="exclude"/>
+    <ProcessTampering onmatch="exclude"/>
+    <FileDeleteDetected onmatch="exclude"/>
+  </EventFiltering>
+</Sysmon>

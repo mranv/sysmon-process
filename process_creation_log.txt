@@ -1,0 +1,1 @@
+[2024-10-10 17:44:09] Monitoring for new process creation events in C:\Users\mranv\Desktop\Hello-World\... Press Ctrl+C to stop.
