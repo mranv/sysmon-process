@@ -1,39 +1,35 @@
-<Sysmon schemaversion="4.81">
-  <EventFiltering>
-    <!-- Log process creation events for .bat, .ps1, and .exe files in a specific folder -->
-    <RuleGroup name="ProcessCreate" groupRelation="or">
-      <ProcessCreate onmatch="include">
-        <Rule name="MonitorTargetFiles" groupRelation="or">
-          <Image condition="end with">.bat</Image>
-          <Image condition="end with">.ps1</Image>
-          <Image condition="end with">.exe</Image>
-        </Rule>
-        <Image condition="contains">C:\Users\mranv\Desktop\Hello-World\</Image>
-      </ProcessCreate>
-    </RuleGroup>
-    
-    <!-- Exclude all other event types -->
-    <FileCreate onmatch="exclude"/>
-    <FileCreateTime onmatch="exclude"/>
-    <FileCreateStreamHash onmatch="exclude"/>
-    <NetworkConnect onmatch="exclude"/>
-    <ProcessTerminate onmatch="exclude"/>
-    <DriverLoad onmatch="exclude"/>
-    <ImageLoad onmatch="exclude"/>
-    <CreateRemoteThread onmatch="exclude"/>
-    <RawAccessRead onmatch="exclude"/>
-    <AccessProcess onmatch="exclude"/>
-    <FileDelete onmatch="exclude"/>
-    <ClipboardChange onmatch="exclude"/>
-    <SetThreadContext onmatch="exclude"/>
-    <ProcessTampering onmatch="exclude"/>
-    <FileDeleteDetected onmatch="exclude"/>
-    <PipeEvent onmatch="exclude"/>
-    <WmiEvent onmatch="exclude"/>
-    <DnsQuery onmatch="exclude"/>
-    <FileBlockExecutable onmatch="exclude"/>
-    <FileBlockShredding onmatch="exclude"/>
-    <ProcessAccess onmatch="exclude"/>
-    <RegistryEvent onmatch="exclude"/>
-  </EventFiltering>
+<Sysmon schemaversion="4.90">
+    <EventFiltering>
+        <!-- Log process creation events for .bat, .ps1, and .exe files in a specific folder -->
+        <RuleGroup name="ProcessCreate" groupRelation="or">
+            <ProcessCreate onmatch="include">
+                <Rule name="MonitorTargetFiles" groupRelation="or">
+                    <Image condition="end with">.bat</Image>
+                    <Image condition="end with">.ps1</Image>
+                    <Image condition="end with">.exe</Image>
+                </Rule>
+                <Image condition="contains">C:\Users\mranv\Desktop\Hello-World\</Image>
+            </ProcessCreate>
+        </RuleGroup>
+        
+        <!-- Exclude all other event types -->
+        <FileCreate onmatch="exclude"/>
+        <FileCreateTime onmatch="exclude"/>
+        <FileCreateStreamHash onmatch="exclude"/>
+        <NetworkConnect onmatch="exclude"/>
+        <ProcessTerminate onmatch="exclude"/>
+        <DriverLoad onmatch="exclude"/>
+        <ImageLoad onmatch="exclude"/>
+        <CreateRemoteThread onmatch="exclude"/>
+        <RawAccessRead onmatch="exclude"/>
+        <ProcessAccess onmatch="exclude"/>
+        <FileDelete onmatch="exclude"/>
+        <ClipboardChange onmatch="exclude"/>
+        <ProcessTampering onmatch="exclude"/>
+        <FileDeleteDetected onmatch="exclude"/>
+        <PipeEvent onmatch="exclude"/>
+        <WmiEvent onmatch="exclude"/>
+        <DnsQuery onmatch="exclude"/>
+        <RegistryEvent onmatch="exclude"/>
+    </EventFiltering>
 </Sysmon>

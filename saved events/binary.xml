@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Events><Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Sysmon' Guid='{5770385f-c22a-43e0-bf4c-06f5698ffbd9}'/><EventID>1</EventID><Version>5</Version><Level>4</Level><Task>1</Task><Opcode>0</Opcode><Keywords>0x8000000000000000</Keywords><TimeCreated SystemTime='2024-10-11T02:31:39.9802561Z'/><EventRecordID>1020788</EventRecordID><Correlation/><Execution ProcessID='4760' ThreadID='1332'/><Channel>Microsoft-Windows-Sysmon/Operational</Channel><Computer>DESKTOP-3Q36AQ5</Computer><Security UserID='S-1-5-18'/></System><EventData><Data Name='RuleName'>MonitorTargetFiles</Data><Data Name='UtcTime'>2024-10-11 02:31:39.976</Data><Data Name='ProcessGuid'>{a499beaf-8e0b-6708-9a01-000000000c00}</Data><Data Name='ProcessId'>5392</Data><Data Name='Image'>C:\Users\mranv\Desktop\Hello-World\sysmon-hello.exe</Data><Data Name='FileVersion'>-</Data><Data Name='Description'>-</Data><Data Name='Product'>-</Data><Data Name='Company'>-</Data><Data Name='OriginalFileName'>-</Data><Data Name='CommandLine'>"C:\Users\mranv\Desktop\Hello-World\sysmon-hello.exe" </Data><Data Name='CurrentDirectory'>C:\Users\mranv\Desktop\Hello-World\</Data><Data Name='User'>DESKTOP-3Q36AQ5\mranv</Data><Data Name='LogonGuid'>{a499beaf-8d42-6708-4f4e-020000000000}</Data><Data Name='LogonId'>0x24e4f</Data><Data Name='TerminalSessionId'>1</Data><Data Name='IntegrityLevel'>Medium</Data><Data Name='Hashes'>SHA256=102A94867879C87E266708C95B229CE8C01BDF9459D39BA3AFEA22523FEE171D</Data><Data Name='ParentProcessGuid'>{a499beaf-8d43-6708-6300-000000000c00}</Data><Data Name='ParentProcessId'>5472</Data><Data Name='ParentImage'>C:\Windows\explorer.exe</Data><Data Name='ParentCommandLine'>C:\Windows\Explorer.EXE</Data><Data Name='ParentUser'>DESKTOP-3Q36AQ5\mranv</Data></EventData><RenderingInfo Culture='en-IN'><Message>Process Create:
+RuleName: MonitorTargetFiles
+UtcTime: 2024-10-11 02:31:39.976
+ProcessGuid: {a499beaf-8e0b-6708-9a01-000000000c00}
+ProcessId: 5392
+Image: C:\Users\mranv\Desktop\Hello-World\sysmon-hello.exe
+FileVersion: -
+Description: -
+Product: -
+Company: -
+OriginalFileName: -
+CommandLine: "C:\Users\mranv\Desktop\Hello-World\sysmon-hello.exe" 
+CurrentDirectory: C:\Users\mranv\Desktop\Hello-World\
+User: DESKTOP-3Q36AQ5\mranv
+LogonGuid: {a499beaf-8d42-6708-4f4e-020000000000}
+LogonId: 0x24E4F
+TerminalSessionId: 1
+IntegrityLevel: Medium
+Hashes: SHA256=102A94867879C87E266708C95B229CE8C01BDF9459D39BA3AFEA22523FEE171D
+ParentProcessGuid: {a499beaf-8d43-6708-6300-000000000c00}
+ParentProcessId: 5472
+ParentImage: C:\Windows\explorer.exe
+ParentCommandLine: C:\Windows\Explorer.EXE
+ParentUser: DESKTOP-3Q36AQ5\mranv</Message><Level>Information</Level><Task>Process Create (rule: ProcessCreate)</Task><Opcode>Info</Opcode><Channel></Channel><Provider></Provider><Keywords></Keywords></RenderingInfo></Event></Events>

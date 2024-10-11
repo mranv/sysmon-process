@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Events><Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Sysmon' Guid='{5770385f-c22a-43e0-bf4c-06f5698ffbd9}'/><EventID>1</EventID><Version>5</Version><Level>4</Level><Task>1</Task><Opcode>0</Opcode><Keywords>0x8000000000000000</Keywords><TimeCreated SystemTime='2024-10-11T02:42:30.1569187Z'/><EventRecordID>1057339</EventRecordID><Correlation/><Execution ProcessID='4760' ThreadID='1332'/><Channel>Microsoft-Windows-Sysmon/Operational</Channel><Computer>DESKTOP-3Q36AQ5</Computer><Security UserID='S-1-5-18'/></System><EventData><Data Name='RuleName'>MonitorTargetFiles</Data><Data Name='UtcTime'>2024-10-11 02:42:30.151</Data><Data Name='ProcessGuid'>{a499beaf-9096-6708-d601-000000000c00}</Data><Data Name='ProcessId'>5860</Data><Data Name='Image'>C:\Windows\System32\cmd.exe</Data><Data Name='FileVersion'>10.0.19041.4355 (WinBuild.160101.0800)</Data><Data Name='Description'>Windows Command Processor</Data><Data Name='Product'>Microsoft® Windows® Operating System</Data><Data Name='Company'>Microsoft Corporation</Data><Data Name='OriginalFileName'>Cmd.Exe</Data><Data Name='CommandLine'>C:\Windows\system32\cmd.exe /c ""C:\Users\mranv\Desktop\Hello-World\hello.bat" "</Data><Data Name='CurrentDirectory'>C:\Users\mranv\Desktop\Hello-World\</Data><Data Name='User'>DESKTOP-3Q36AQ5\mranv</Data><Data Name='LogonGuid'>{a499beaf-8d42-6708-4f4e-020000000000}</Data><Data Name='LogonId'>0x24e4f</Data><Data Name='TerminalSessionId'>1</Data><Data Name='IntegrityLevel'>Medium</Data><Data Name='Hashes'>SHA256=BADF4752413CB0CBDC03FB95820CA167F0CDC63B597CCDB5EF43111180E088B0</Data><Data Name='ParentProcessGuid'>{a499beaf-8d43-6708-6300-000000000c00}</Data><Data Name='ParentProcessId'>5472</Data><Data Name='ParentImage'>C:\Windows\explorer.exe</Data><Data Name='ParentCommandLine'>C:\Windows\Explorer.EXE</Data><Data Name='ParentUser'>DESKTOP-3Q36AQ5\mranv</Data></EventData><RenderingInfo Culture='en-IN'><Message>Process Create:
+RuleName: MonitorTargetFiles
+UtcTime: 2024-10-11 02:42:30.151
+ProcessGuid: {a499beaf-9096-6708-d601-000000000c00}
+ProcessId: 5860
+Image: C:\Windows\System32\cmd.exe
+FileVersion: 10.0.19041.4355 (WinBuild.160101.0800)
+Description: Windows Command Processor
+Product: Microsoft® Windows® Operating System
+Company: Microsoft Corporation
+OriginalFileName: Cmd.Exe
+CommandLine: C:\Windows\system32\cmd.exe /c ""C:\Users\mranv\Desktop\Hello-World\hello.bat" "
+CurrentDirectory: C:\Users\mranv\Desktop\Hello-World\
+User: DESKTOP-3Q36AQ5\mranv
+LogonGuid: {a499beaf-8d42-6708-4f4e-020000000000}
+LogonId: 0x24E4F
+TerminalSessionId: 1
+IntegrityLevel: Medium
+Hashes: SHA256=BADF4752413CB0CBDC03FB95820CA167F0CDC63B597CCDB5EF43111180E088B0
+ParentProcessGuid: {a499beaf-8d43-6708-6300-000000000c00}
+ParentProcessId: 5472
+ParentImage: C:\Windows\explorer.exe
+ParentCommandLine: C:\Windows\Explorer.EXE
+ParentUser: DESKTOP-3Q36AQ5\mranv</Message><Level>Information</Level><Task>Process Create (rule: ProcessCreate)</Task><Opcode>Info</Opcode><Channel></Channel><Provider></Provider><Keywords></Keywords></RenderingInfo></Event></Events>
