@@ -1,0 +1,42 @@
+<Sysmon schemaversion="4.81">
+  <EventFiltering>
+    <!-- Capture all Process Create events -->
+    <ProcessCreate onmatch="include">
+      <!-- Log all bash and sh executions -->
+      <Image condition="contains">/bin/bash</Image>
+      <Image condition="contains">/bin/sh</Image>
+      <Image condition="contains">/usr/bin/bash</Image>
+      <Image condition="contains">/usr/bin/sh</Image>
+      
+      <!-- Log command line for all processes -->
+      <CommandLine condition="contains">*</CommandLine>
+      
+      <!-- Log processes created by bash or sh -->
+      <ParentImage condition="contains">/bin/bash</ParentImage>
+      <ParentImage condition="contains">/bin/sh</ParentImage>
+      <ParentImage condition="contains">/usr/bin/bash</ParentImage>
+      <ParentImage condition="contains">/usr/bin/sh</ParentImage>
+      
+      <!-- Log execution of binaries from common locations -->
+      <Image condition="contains">/bin/</Image>
+      <Image condition="contains">/sbin/</Image>
+      <Image condition="contains">/usr/bin/</Image>
+      <Image condition="contains">/usr/sbin/</Image>
+      <Image condition="contains">/usr/local/bin/</Image>
+      <Image condition="contains">/usr/local/sbin/</Image>
+      <Image condition="contains">/opt/</Image>
+    </ProcessCreate>
+    
+    <!-- Exclude some common system processes to reduce noise -->
+    <ProcessCreate onmatch="exclude">
+      <Image condition="is">/lib/systemd/systemd</Image>
+      <Image condition="is">/usr/bin/dbus-daemon</Image>
+      <Image condition="is">/usr/bin/sudo</Image>
+    </ProcessCreate>
+
+    <!-- Exclude all other event types -->
+    <FileCreate onmatch="exclude"/>
+    <NetworkConnect onmatch="exclude"/>
+    <RegistryEvent onmatch="exclude"/>
+  </EventFiltering>
+</Sysmon>
